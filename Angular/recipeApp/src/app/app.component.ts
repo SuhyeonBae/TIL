@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'recipeApp';
+  
+  loadedMenu = 'recipe';
+
+  onNavigate(menu: string){
+    this.loadedMenu = menu;
+  }
 }
